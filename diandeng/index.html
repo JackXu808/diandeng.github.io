@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点灯小世界</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="header-content">
+                <h1>点灯小世界</h1>
+                <div class="countdown" id="countdown">18</div>
+            </div>
+            <div class="scoreboard">
+                <div class="score red-score">
+                    <span class="color-box red"></span>
+                    <span class="count" id="red-count">0</span>
+                </div>
+                <div class="score blue-score">
+                    <span class="color-box blue"></span>
+                    <span class="count" id="blue-count">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="game-board" id="game-board">
+            <div class="board-content" id="board-content">
+                <!-- 网络图将在这里生成 -->
+            </div>
+        </main>
+        
+        <footer class="game-footer">
+            <button class="reset-button" id="reset-button">重新开始</button>
+        </footer>
+    </div>
+    
+    <div class="result-modal" id="result-modal">
+        <div class="result-content">
+            <h2 id="result-title">游戏结束</h2>
+            <div class="result-score">
+                <div class="score red-score">
+                    <span class="color-box red"></span>
+                    <span class="count" id="final-red-count">0</span>
+                </div>
+                <div class="score blue-score">
+                    <span class="color-box blue"></span>
+                    <span class="count" id="final-blue-count">0</span>
+                </div>
+            </div>
+            <div class="winner-message" id="winner-message">
+                <span class="win-text" id="win-text"></span>
+            </div>
+            <button class="reset-button" id="view-result-button">查看赛果图</button>
+            <button class="reset-button" id="play-again-button">再玩一次</button>
+        </div>
+    </div>
+    
+    <div class="result-modal" id="result-graph-modal">
+        <div class="result-content">
+            <h2>最终赛果图</h2>
+            <div class="result-graph-container" id="result-graph-container">
+                <!-- 赛果图将在这里显示 -->
+            </div>
+            <button class="reset-button" id="play-again-from-graph-button">再玩一次</button>
+        </div>
+    </div>
+    
+    <div class="start-modal" id="start-modal">
+        <div class="result-content">
+            <h2 id="start-title">准备开始</h2>
+            <div class="start-message">
+                <p>第 <span id="round-number">1</span> 回合</p>
+                <p>当前回合: <span id="current-player" class="player-color red">红色方</span></p>
+            </div>
+            <button class="reset-button" id="start-button">开始回合</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <!-- 浮动霓虹灯牌 -->
+    <div class="neon-sign">徐李杰珂制作</div>
+    <div class="neon-sign">徐李杰珂制作</div>
+    <div class="neon-sign">徐李杰珂制作</div>
+    <div class="neon-sign">徐李杰珂制作</div>
+    
+    <!-- 霓虹香港元素 -->
+    <div class="hong-kong-neon"></div>
+    
+    <!-- 霓虹舞狮元素 -->
+    <div class="lion-neon"></div>
+</body>
+</html>
